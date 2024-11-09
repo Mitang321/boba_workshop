@@ -16,21 +16,21 @@ body {
 
 .container {
   background: peachpuff;
-  border: 5px dashed orange;
-  border-radius: 15px;
-  padding: 40px;
-  max-width: 600px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border: 3px dashed orange;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 500px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: orangered;
 }
 
 .subtitle {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
+  font-size: 1rem;
+  margin-bottom: 20px;
   color: orangered;
 }
 
@@ -41,23 +41,23 @@ body {
 }
 
 .emoji {
-  font-size: 3rem;
-  margin: 10px 0;
+  font-size: 2.5rem;
+  margin: 8px 0;
   animation: bounce 1.5s infinite;
 }
 
 @keyframes bounce {
   0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+  50% { transform: translateY(-8px); }
 }
 
 .joke-box {
   background-color: #fff;
-  border: 3px solid orangered;
-  border-radius: 25px;
-  padding: 15px;
-  max-width: 90%;
-  margin: 10px 0;
+  border: 2px solid orangered;
+  border-radius: 20px;
+  padding: 10px;
+  max-width: 80%;
+  margin: 8px 0;
   position: relative;
   display: inline-block;
   transition: transform 0.3s ease, background-color 0.3s ease;
@@ -66,9 +66,9 @@ body {
 .joke-box::after {
   content: "";
   position: absolute;
-  bottom: -15px;
-  left: 20px;
-  border-width: 15px 15px 0;
+  bottom: -10px;
+  left: 15px;
+  border-width: 10px 10px 0;
   border-style: solid;
   border-color: orangered transparent;
   display: block;
@@ -76,69 +76,97 @@ body {
 }
 
 .joke {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #ff0000;
 }
 
 .joke-box:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
   background-color: blanchedalmond;
 }
 
 .footer {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: #ff6a00;
-  margin-top: 30px;
-}@media (max-width: 1200px) {
-    .title {
-      font-size: 2rem;
-    }
-    
-    .subtitle, .joke {
-      font-size: 1rem;
-    }
-    
-    .emoji {
-      font-size: 2.5rem;
-    }
-    
-    .container {
-      padding: 30px;
-      max-width: 90%;
-    }
-    
-    .joke-box {
-      padding: 10px;
-    }
+  margin-top: 20px;
+}
+
+@media (max-width: 1020px) {
+  .container {
+    padding: 10px;
+    max-width: 85%;
   }
   
-  @media (max-width: 768px) {
-    body {
-      padding: 20px;
-    }
-  
-    .title {
-      font-size: 1.8rem;
-    }
-    
-    .subtitle, .joke {
-      font-size: 0.9rem;
-    }
-    
-    .emoji {
-      font-size: 2rem;
-    }
-    
-    .container {
-      padding: 20px;
-      max-width: 100%;
-    }
-  
-    .joke-box {
-      padding: 8px;
-    }
-    
-    .footer {
-      font-size: 0.8rem;
-    }
+  .title {
+    font-size: 1.4rem;
   }
+
+  .subtitle, .joke {
+    font-size: 0.75rem;
+  }
+  
+  .emoji {
+    font-size: 1.6rem;
+  }
+  
+  .joke-box {
+    padding: 5px;
+  }
+  
+  .footer {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    padding: 5px;
+  }
+
+  .container {
+    padding: 8px;
+    max-width: 90%;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+  
+  .subtitle, .joke {
+    font-size: 0.7rem;
+  }
+  
+  .emoji {
+    font-size: 1.4rem;
+  }
+  
+  .joke-box {
+    padding: 4px;
+  }
+  
+  .footer {
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 6px;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+  
+  .subtitle, .joke {
+    font-size: 0.65rem;
+  }
+  
+  .emoji {
+    font-size: 1.2rem;
+  }
+  
+  .footer {
+    font-size: 0.4rem;
+  }
+}
