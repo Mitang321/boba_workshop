@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: papayawhip;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.container {
+  background: peachpuff;
+  border: 5px dashed orange;
+  border-radius: 15px;
+  padding: 40px;
+  max-width: 600px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.title {
+  font-size: 2.5rem;
+  color: orangered;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: orangered;
+}
+
+.funny-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.emoji {
+  font-size: 3rem;
+  margin: 10px 0;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.joke-box {
+  background-color: #fff;
+  border: 3px solid orangered;
+  border-radius: 25px;
+  padding: 15px;
+  max-width: 90%;
+  margin: 10px 0;
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.joke-box::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 20px;
+  border-width: 15px 15px 0;
+  border-style: solid;
+  border-color: orangered transparent;
+  display: block;
+  width: 0;
+}
+
+.joke {
+  font-size: 1.2rem;
+  color: #ff0000;
+}
+
+.joke-box:hover {
+  transform: scale(1.05);
+  background-color: blanchedalmond;
+}
+
+.footer {
+  font-size: 0.9rem;
+  color: #ff6a00;
+  margin-top: 30px;
+}
